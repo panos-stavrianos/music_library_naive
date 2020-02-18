@@ -5,19 +5,19 @@ cd "$BASEDIR" || exit
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-
-LOGO="logo.png"
-START_FILE="start.sh"
-
-cat >~/.local/share/applications/music_library_naive.desktop <<EOL
-[Desktop Entry]
-Type=Application
-Encoding=UTF-8
-Name=Music Library (Simple)
-Comment=An easy way to find your music
-Exec=${BASEDIR}/${START_FILE}
-Icon=${BASEDIR}/${LOGO}
-Terminal=false
-EOL
-
+#
+#LOGO="logo.png"
+#START_FILE="start.sh"
+#
+#cat >~/.local/share/applications/music_library_naive.desktop <<EOL
+#[Desktop Entry]
+#Type=Application
+#Encoding=UTF-8
+#Name=Music Library (Simple)
+#Comment=An easy way to find your music
+#Exec=${BASEDIR}/${START_FILE}
+#Icon=${BASEDIR}/${LOGO}
+#Terminal=false
+#EOL
+#
 
