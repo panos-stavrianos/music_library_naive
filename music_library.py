@@ -249,6 +249,8 @@ class MusicLibrary(object):
 root = Tk()
 
 root.title("Music Library")
+root.wm_title("Music Library")
+root.tk.call('wm', 'iconphoto', root._w, PhotoImage(file='logo.png'))
 root.configure(background='gray19')
 
 root.geometry('815x800')
